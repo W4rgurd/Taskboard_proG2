@@ -5,6 +5,8 @@ import {Task} from './task/task';
 
 export const routes: Routes = [
   { path: '', component: Home },
-  { path: 'about', component: About },
-  { path: 'task', component: Task }
+  { path: 'about',
+  loadChildren : () => import('./abouts-page/routes').then(m => m.ABOUTS_ROUTES)},
+  { path: 'task',
+    loadChildren : () => import('./tasks-page/routes').then(m => m.TASKS_ROUTES)}
 ];
