@@ -1,6 +1,15 @@
-<nav>
-  <ul>
-    <li><a routerLink="/home" routerLinkActive="active">Accueil</a></li>
-    <li><a routerLink="/about" routerLinkActive="active">A propos</a></li>
-  </ul>
-</nav>
+<header class="app-header">
+  <div class="header-container">
+    <div class="logo-section">
+      <h1 class="app-title">TaskBoardPro</h1>
+    </div>
+
+    <nav class="navbar" aria-label="Navigation principale">
+      <p> Temps écoulé : {{ count }} secondes</p>
+
+      <a routerLink="" routerLinkActive="active" > Accueil </a>
+      <a routerLink="/about" routerLinkActive="active" > A propos </a>
+    </nav>
+
+  </div>
+</header>
